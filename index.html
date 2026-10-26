@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>카리스앤코 | 한끗픽</title>
+<meta name="description" content="식품업계 22년, 직접 고른 제품만 소개합니다. 좋은데 덜 알려진 제품을 찾아 소개하는 큐레이션 브랜드, 한끗픽">
+<link rel="canonical" href="https://hankkeut.kr/">
+<!-- 링크 미리보기 (카카오톡·인스타·페이스북 등) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="한끗픽">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://hankkeut.kr/">
+<meta property="og:title" content="카리스앤코 | 한끗픽">
+<meta property="og:description" content="식품업계 22년, 직접 고른 제품만 소개합니다. 좋은데 덜 알려진 제품을 찾아 소개하는 큐레이션 브랜드, 한끗픽">
+<meta property="og:image" content="https://hankkeut.kr/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- 탭 아이콘 -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#F4EFE6">
+<!-- 검색엔진용 회사 정보 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "카리스앤코",
+  "alternateName": ["Charis & Co.", "한끗픽"],
+  "url": "https://hankkeut.kr/",
+  "logo": "https://hankkeut.kr/apple-touch-icon.png",
+  "email": "charis@hankkeut.kr",
+  "sameAs": [
+    "https://smartstore.naver.com/hankkeut_kr",
+    "https://blog.naver.com/hankkeut_note",
+    "https://www.instagram.com/hankkeut.note"
+  ]
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --bg: #F4EFE6;          /* 오트밀 */
+    --sand: #E9E0D0;
+    --paper: #FBF9F5;
+    --navy: #14213D;
+    --navy-2: #22325A;
+    --gold: #C9A86A;
+    --gold-deep: #9A783C;   /* 밝은 바탕 위 골드 글자 */
+    --ink: #14213D;
+    --muted: #6B6F78;
+    --line: #DCD3C3;
+    --font: "Pretendard Variable", Pretendard, -apple-system, system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    /* 사진 위에 얹는 아주 옅은 필름 입자 */
+    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--font); font-size: 16px; line-height: 1.7; letter-spacing: -0.01em;
+    word-break: keep-all; -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+  @media (min-width: 900px) { .wrap { padding: 0 40px; } }
+
+  /* 사진 공통: 색감을 차분하게 맞추고 필름 입자를 살짝 */
+  .ph { position: relative; overflow: hidden; background: var(--sand); }
+  .ph img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.9) contrast(.97) sepia(.05); }
+  .ph::after { content: ""; position: absolute; inset: 0; background: var(--grain); opacity: .13; mix-blend-mode: multiply; pointer-events: none; }
+
+  /* ───── 상단 바 ───── */
+  .top { position: fixed; inset: 0 0 auto 0; z-index: 30; transition: background .3s, box-shadow .3s; }
+  .top.scrolled { background: rgba(244, 239, 230, .92); backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { text-decoration: none; display: flex; align-items: baseline; gap: 10px; color: var(--navy); }
+  .logo b { font-size: 20px; font-weight: 800; letter-spacing: -0.03em; }
+  .logo b i { font-style: normal; color: var(--gold-deep); }
+  .logo small { font-size: 11px; font-weight: 600; letter-spacing: .14em; color: var(--muted); }
+  .nav { display: none; gap: 32px; align-items: center; }
+  .nav a { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500; }
+  .nav a:hover { color: var(--navy); }
+  .nav .cta { color: var(--navy); font-weight: 700; border-bottom: 1.5px solid var(--gold); padding-bottom: 2px; }
+  @media (min-width: 900px) { .nav { display: flex; } }
+
+  /* ───── 버튼 ───── */
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 54px; padding: 0 24px; border-radius: 10px; font-size: 16px; font-weight: 600;
+    text-decoration: none; transition: background .2s, border-color .2s, color .2s;
+  }
+  .btn .arr { transition: transform .2s; }
+  .btn:hover .arr { transform: translate(2px, -2px); }
+  .btn-navy { background: var(--navy); color: #fff; }
+  .btn-navy:hover { background: var(--navy-2); }
+  .btn-line { border: 1.5px solid var(--navy); color: var(--navy); }
+  .btn-line:hover { background: var(--navy); color: #fff; }
+  .btn-gold { background: var(--gold); color: var(--navy); }
+  .btn-gold:hover { background: #D6B87E; }
+  .btn-ghost { border: 1.5px solid rgba(255, 255, 255, .35); color: #fff; }
+  .btn-ghost:hover { border-color: #fff; }
+
+  /* ───── 첫 화면 ───── */
+  .hero { padding: 76px 0 56px; }
+  .hero .grid { display: grid; gap: 26px; }
+  .hero .ph { border-radius: 14px; aspect-ratio: 16 / 10; }
+  .hero .ph img { object-position: 74% 60%; }
+  .eyebrow { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: .02em; }
+  .eyebrow b { color: var(--gold-deep); font-weight: 700; }
+  .hero h1 { font-size: clamp(30px, 8.4vw, 64px); font-weight: 800; line-height: 1.24; letter-spacing: -0.045em; margin: 10px 0 0; }
+  .hero p { font-size: clamp(16px, 2vw, 19px); color: var(--muted); margin: 14px 0 0; }
+  .hero p strong { color: var(--ink); }
+  .hero .btns { margin-top: 26px; }
+  @media (max-width: 520px) { .hero .btn { flex: 1 1 100%; min-height: 52px; } }
+  @media (min-width: 900px) {
+    .hero { padding: 120px 0 96px; }
+    .hero .grid { grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .hero .text { order: -1; }
+    .hero .ph { aspect-ratio: 4 / 4.6; border-radius: 18px; }
+    .hero .ph img { object-position: 82% 85%; }
+    .hero p { margin-top: 22px; }
+    .hero .btns { margin-top: 40px; }
+  }
+
+  /* ───── 공통 제목 ───── */
+  section.block { padding: 80px 0; }
+  @media (min-width: 900px) { section.block { padding: 120px 0; } }
+  .label { font-size: 13px; font-weight: 600; color: var(--muted); margin: 0 0 14px; }
+  .label b { color: var(--gold-deep); font-weight: 800; margin-right: 8px; }
+  h2 { font-size: clamp(26px, 5.6vw, 44px); font-weight: 800; line-height: 1.28; letter-spacing: -0.045em; margin: 0; }
+  .lead { color: var(--muted); font-size: clamp(16px, 1.8vw, 18px); margin: 14px 0 0; }
+
+  /* ───── 01 선정 기준 ─────
+     PC: 왼쪽 사진이 고정된 채, 오른쪽 기준을 내리면 사진이 하나씩 바뀜
+     휴대폰: 기준마다 사진이 커튼 걷히듯 열리며 등장 */
+  .steps-head { max-width: 640px; }
+  .steps { margin-top: 40px; display: grid; gap: 56px; }
+  .step .ph { border-radius: 14px; aspect-ratio: 4 / 3; clip-path: inset(0 0 100% 0); transition: clip-path 1.1s cubic-bezier(.7, 0, .2, 1); }
+  .step .ph img { transform: scale(1.12); transition: transform 1.6s cubic-bezier(.2, .7, .2, 1); }
+  .step.on .ph { clip-path: inset(0 0 0 0); }
+  .step.on .ph img { transform: scale(1); }
+  .step .num { font-size: 72px; font-weight: 800; line-height: 1; letter-spacing: -0.05em; color: transparent; -webkit-text-stroke: 1.2px var(--gold); margin: 22px 0 6px; }
+  .step h3 { font-size: 23px; font-weight: 800; letter-spacing: -0.03em; margin: 0; }
+  .step p { margin: 8px 0 0; color: var(--muted); font-size: 16px; }
+  .stage { display: none; }
+  @media (min-width: 900px) {
+    .crit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 24px; }
+    .stage { display: block; position: sticky; top: 96px; height: calc(100vh - 140px); max-height: 720px; border-radius: 18px; overflow: hidden; }
+    .stage .ph { position: absolute; inset: 0; opacity: 0; transition: opacity .8s ease; }
+    .stage .ph img { transform: scale(1.08); transition: transform 2.4s cubic-bezier(.2, .7, .2, 1); }
+    .stage .ph.on { opacity: 1; }
+    .stage .ph.on img { transform: scale(1); }
+    .stage .count { position: absolute; left: 22px; bottom: 20px; z-index: 2; color: #fff; font-size: 14px; font-weight: 700; letter-spacing: .08em; text-shadow: 0 1px 8px rgba(0, 0, 0, .35); }
+    .stage .count i { font-style: normal; opacity: .6; }
+    .steps { margin-top: 0; gap: 0; }
+    .step { min-height: 72vh; display: flex; flex-direction: column; justify-content: center; opacity: .28; transition: opacity .5s ease; }
+    .step.active { opacity: 1; }
+    .step .ph { display: none; }
+    .step .num { font-size: 120px; margin: 0 0 10px; }
+    .step h3 { font-size: 34px; }
+    .step p { font-size: 19px; margin-top: 12px; max-width: 420px; }
+  }
+
+  /* ───── 02 대표 소개 ─────
+     상자 대신 잡지식 목록: 분야 이름을 크게, 설명은 옆에 */
+  .about { background: var(--paper); }
+  .about .grid { display: grid; gap: 40px; }
+  .fields { list-style: none; margin: 0; padding: 0; border-top: 1.5px solid var(--navy); }
+  .fields li { display: grid; grid-template-columns: 34px 1fr; gap: 4px 8px; padding: 20px 0; border-bottom: 1px solid var(--line); position: relative; }
+  .fields .i { font-size: 13px; font-weight: 700; color: var(--gold-deep); padding-top: 6px; }
+  .fields h3 { font-size: 21px; font-weight: 800; letter-spacing: -0.03em; margin: 0; transition: transform .35s ease; }
+  .fields p { grid-column: 2; margin: 2px 0 0; color: var(--muted); font-size: 15px; }
+  .fields li::after { content: ""; position: absolute; left: 0; bottom: -1px; height: 1.5px; width: 0; background: var(--gold); transition: width .5s ease; }
+  .fields li:hover::after { width: 100%; }
+  .fields li:hover h3 { transform: translateX(6px); }
+  @media (min-width: 900px) {
+    .about .grid { grid-template-columns: 1fr 1.25fr; gap: 80px; align-items: start; }
+    .about .intro { position: sticky; top: 120px; }
+    .fields li { grid-template-columns: 48px 1fr 1.15fr; align-items: baseline; padding: 30px 0; }
+    .fields h3 { font-size: 28px; }
+    .fields p { grid-column: 3; margin: 0; font-size: 16px; }
+  }
+
+  /* ───── 03 취급 분야 ───── */
+  .cats {
+    display: grid; grid-auto-flow: column; grid-auto-columns: 80%; gap: 12px;
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 20px; margin: 32px -20px 0; padding: 0 20px 4px;
+    scrollbar-width: none;
+  }
+  .cats::-webkit-scrollbar { display: none; }
+  .cat { scroll-snap-align: start; }
+  .cat .ph { border-radius: 14px; aspect-ratio: 1 / 1.05; }
+  .cat .ph img { transition: transform .8s ease; }
+  .cat:hover .ph img { transform: scale(1.04); }
+  .cat h3 { font-size: 19px; font-weight: 800; letter-spacing: -0.02em; margin: 16px 0 2px; }
+  .cat p { margin: 0; color: var(--muted); font-size: 15px; }
+  @media (min-width: 900px) {
+    .cats { grid-auto-flow: row; grid-template-columns: 1.15fr 1fr 1fr; grid-auto-columns: auto; gap: 24px; margin: 56px 0 0; padding: 0; overflow: visible; align-items: end; }
+    .cat:first-child .ph { aspect-ratio: 1 / 1.2; }
+    .cat h3 { font-size: 21px; margin-top: 18px; }
+  }
+  .links { margin-top: 40px; border-top: 1px solid var(--line); }
+  .links a {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+    padding: 18px 0; border-bottom: 1px solid var(--line); text-decoration: none; transition: padding .3s ease;
+  }
+  .links b { font-size: 19px; font-weight: 800; letter-spacing: -0.02em; }
+  .links small { color: var(--muted); font-size: 14px; margin-left: auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .links .arr { color: var(--gold-deep); font-weight: 700; flex: none; transition: transform .3s; }
+  .links a:hover { padding-left: 8px; }
+  .links a:hover .arr { transform: translate(3px, -3px); }
+  @media (max-width: 520px) { .links small { display: none; } }
+  @media (min-width: 900px) { .links { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 40px; } .links b { font-size: 22px; } .links a { padding: 24px 0; } }
+
+  /* ───── 04 공급·제휴 제안 ───── */
+  .propose { padding: 0 0 80px; }
+  .pbox { background: var(--navy); color: #fff; border-radius: 18px; overflow: hidden; }
+  .pbox .head { display: grid; }
+  .pbox .ph { aspect-ratio: 16 / 10; background: var(--navy-2); }
+  .pbox .ph img { object-position: 70% 60%; }
+  .pbox .text { padding: 30px 22px 0; }
+  .pbox .label { color: rgba(255, 255, 255, .6); }
+  .pbox .label b { color: var(--gold); }
+  .pbox .lead { color: rgba(255, 255, 255, .72); }
+  .two { display: grid; gap: 28px; padding: 32px 22px 0; }
+  .two h3 { font-size: 14px; font-weight: 700; color: var(--gold); margin: 0 0 6px; }
+  .two ul, .two ol { list-style: none; margin: 0; padding: 0; }
+  .two li { padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, .12); color: rgba(255, 255, 255, .9); font-size: 15px; }
+  .two ol { counter-reset: s; }
+  .two ol li { counter-increment: s; display: grid; grid-template-columns: 24px 1fr; }
+  .two ol li::before { content: counter(s) "."; color: var(--gold); font-weight: 700; }
+  .mail { padding: 28px 22px 30px; }
+  .mail .lbl { display: block; color: rgba(255, 255, 255, .6); font-size: 14px; margin-bottom: 12px; }
+  @media (max-width: 520px) { .mail .btn { flex: 1 1 100%; } }
+  @media (min-width: 900px) {
+    .propose { padding-bottom: 120px; }
+    .pbox { border-radius: 22px; }
+    .pbox .head { grid-template-columns: 1fr 1fr; align-items: center; }
+    .pbox .ph { order: 2; aspect-ratio: auto; height: 100%; min-height: 380px; }
+    .pbox .text { padding: 64px 56px; }
+    .two { grid-template-columns: 1fr 1.3fr; gap: 48px; padding: 8px 56px 0; }
+    .mail { padding: 36px 56px 56px; display: flex; align-items: center; gap: 20px; }
+    .mail .lbl { margin: 0; }
+  }
+
+  /* ───── 바닥글 ───── */
+  footer { padding: 36px 0 44px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); }
+  footer .logo { margin-bottom: 12px; }
+  footer p { margin: 0; line-height: 1.9; }
+  footer .dot { margin: 0 8px; color: var(--line); }
+  footer .nw { white-space: nowrap; }
+  footer a { text-decoration: none; }
+  footer a:hover { color: var(--navy); }
+
+  /* ───── 휴대폰 하단 고정 버튼 ───── */
+  .dock {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    display: flex; gap: 8px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(244, 239, 230, .94); backdrop-filter: blur(14px); border-top: 1px solid var(--line);
+    transform: translateY(110%); transition: transform .3s ease;
+  }
+  .dock.show { transform: none; }
+  .dock .btn { flex: 1; min-height: 48px; font-size: 15px; padding: 0 12px; }
+  @media (max-width: 899px) { body { padding-bottom: 72px; } }
+  @media (min-width: 900px) { .dock { display: none; } }
+
+  /* ───── 스크롤하면 부드럽게 나타나기 ───── */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.on { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal, .step .ph, .step .ph img, .stage .ph img { opacity: 1; transform: none; clip-path: none; transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top" id="topbar">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>한끗<i>픽</i></b><small>CHARIS &amp; CO.</small></a>
+    <nav class="nav">
+      <a href="#criteria">선정 기준</a>
+      <a href="#about">대표 소개</a>
+      <a href="#channels">취급 분야</a>
+      <a class="cta" href="#propose">공급·제휴 제안</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 첫 화면 -->
+  <section class="hero" id="hero">
+    <div class="wrap grid">
+      <div class="ph"><img src="images/hero.jpg" alt="나무 테이블 위 라테와 시럽 병" width="1536" height="1024"></div>
+      <div class="text">
+        <span class="eyebrow"><b>카리스앤코</b> · CHARIS &amp; CO.</span>
+        <h1>식품업계 22년,<br>직접 고른 제품만 소개합니다.</h1>
+        <p>좋은데 덜 알려진 제품을 찾아 소개하는 큐레이션 브랜드, <strong>한끗픽</strong></p>
+        <div class="btns">
+          <a class="btn btn-navy" href="https://smartstore.naver.com/hankkeut_kr" target="_blank" rel="noopener">스마트스토어 바로가기 <span class="arr">↗</span></a>
+          <a class="btn btn-line" href="#propose">공급·제휴 제안하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 선정 기준 -->
+  <section class="block" id="criteria">
+    <div class="wrap">
+      <div class="steps-head reveal">
+        <p class="label"><b>01</b>선정 기준</p>
+        <h2>한 끗 차이를 알아보는 눈으로 고릅니다</h2>
+        <p class="lead">네 가지 기준을 통과한 제품만 소개합니다.</p>
+      </div>
+      <div class="crit-grid">
+        <div class="stage" aria-hidden="true">
+          <div class="ph on"><img src="images/crit1_hidden.jpg" alt="" width="1024" height="1536"></div>
+          <div class="ph"><img src="images/crit2_loved.jpg" alt="" loading="lazy" width="1024" height="1536"></div>
+          <div class="ph"><img src="images/crit3_check.jpg" alt="" loading="lazy" width="973" height="1475"></div>
+          <div class="ph"><img src="images/crit4_season.jpg" alt="" loading="lazy" width="1024" height="1290"></div>
+          <span class="count" id="count">01 <i>/ 04</i></span>
+        </div>
+        <ol class="steps" style="list-style:none;padding:0">
+          <li class="step">
+            <div class="ph"><img src="images/crit1_hidden.jpg" alt="선반 뒤쪽에 놓인 작은 유리병" loading="lazy" width="1024" height="1536"></div>
+            <div class="num">01</div>
+            <h3>숨어 있는 좋은 제품</h3>
+            <p>품질은 좋지만 덜 알려진 제품을 먼저 찾습니다.</p>
+          </li>
+          <li class="step">
+            <div class="ph"><img src="images/crit2_loved.jpg" alt="거의 다 먹은 잼 병과 빈 접시" loading="lazy" width="1024" height="1536"></div>
+            <div class="num">02</div>
+            <h3>오래 사랑받는 제품</h3>
+            <p>반짝 유행보다 실제 후기를 살펴 고릅니다.</p>
+          </li>
+          <li class="step">
+            <div class="ph"><img src="images/crit3_check.jpg" alt="제품 봉투를 손에 들고 살펴보는 모습" loading="lazy" width="973" height="1475"></div>
+            <div class="num">03</div>
+            <h3>직접 확인한 제품</h3>
+            <p>제조원·원재료·인증 정보까지 하나하나 꼼꼼히 살핍니다.</p>
+          </li>
+          <li class="step">
+            <div class="ph"><img src="images/crit4_season.jpg" alt="창가에 놓인 감과 따뜻한 차" loading="lazy" width="1024" height="1290"></div>
+            <div class="num">04</div>
+            <h3>지금 필요한 제품</h3>
+            <p>계절과 일상에 맞춰 고릅니다.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 대표 소개 -->
+  <section class="block about" id="about">
+    <div class="wrap grid">
+      <div class="intro reveal">
+        <p class="label"><b>02</b>대표 소개</p>
+        <h2>직접 만들어 본 경험이<br>기준이 됩니다</h2>
+        <p class="lead">식품기업에서 약 22년간 식품·음료 기획·개발·마케팅을 맡았고, 베이커리 매장도 직접 운영했습니다.</p>
+      </div>
+      <ol class="fields reveal">
+        <li><span class="i">01</span><h3>커피·카페 재료</h3><p>시럽·파우더·음료베이스 기획과 출시, 카테고리 운영</p></li>
+        <li><span class="i">02</span><h3>건강음료</h3><p>녹즙·착즙주스 개발, 제조·유통 체계 구축</p></li>
+        <li><span class="i">03</span><h3>마케팅</h3><p>네이버 검색광고, 인스타그램, 박람회·시연회</p></li>
+        <li><span class="i">04</span><h3>매장 운영</h3><p>베이커리 매장 직접 운영</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 03 취급 분야 -->
+  <section class="block" id="channels">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label"><b>03</b>취급 분야</p>
+        <h2>홈카페 재료와 다양한 시즌용품을 소개합니다</h2>
+      </div>
+      <div class="cats reveal">
+        <article class="cat">
+          <div class="ph"><img src="images/cat_homecafe.jpg" alt="시럽 병과 파우더, 아이스 라테" loading="lazy" width="1024" height="1024"></div>
+          <h3>홈카페</h3><p>시럽, 음료 베이스, 파우더</p>
+        </article>
+        <article class="cat">
+          <div class="ph"><img src="images/cat_winter.jpg" alt="니트 장갑과 목도리, 따뜻한 차" loading="lazy" width="1024" height="1024"></div>
+          <h3>겨울 시즌용품</h3><p>핫팩, 발핫팩·깔창형 핫팩, 어린이용 핫팩</p>
+        </article>
+        <article class="cat">
+          <div class="ph"><img src="images/cat_pantry.jpg" alt="잼과 꿀, 올리브유, 크래커와 과일" loading="lazy" width="1024" height="1024"></div>
+          <h3>생활·식품</h3><p>수입식품 등 계절별 선별 제품</p>
+        </article>
+      </div>
+      <nav class="links reveal" aria-label="판매 채널">
+        <a href="https://smartstore.naver.com/hankkeut_kr" target="_blank" rel="noopener"><b>스마트스토어</b><small>smartstore.naver.com/hankkeut_kr</small><span class="arr">↗</span></a>
+        <a href="https://blog.naver.com/hankkeut_note" target="_blank" rel="noopener"><b>블로그</b><small>blog.naver.com/hankkeut_note</small><span class="arr">↗</span></a>
+        <a href="https://www.instagram.com/hankkeut.note" target="_blank" rel="noopener"><b>인스타그램</b><small>@hankkeut.note</small><span class="arr">↗</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 04 공급·제휴 제안 -->
+  <section class="propose" id="propose">
+    <div class="wrap">
+      <div class="pbox reveal">
+        <div class="head">
+          <div class="ph"><img src="images/propose.jpg" alt="책상 위에 쌓인 상자와 샘플" loading="lazy" width="1536" height="1024"></div>
+          <div class="text">
+            <p class="label"><b>04</b>공급·제휴 제안</p>
+            <h2>좋은 제품의<br>제안을 기다립니다</h2>
+            <p class="lead">판매가 부진한 제품도 함께 고민해 드립니다.</p>
+          </div>
+        </div>
+        <div class="two">
+          <div>
+            <h3>이런 제안을 받습니다</h3>
+            <ul>
+              <li>제조사·수입사의 직거래 공급</li>
+              <li>판매가 부진한 제품의 판매 대행 (위탁·사입)</li>
+              <li>시즌 상품 공동 기획</li>
+            </ul>
+          </div>
+          <div>
+            <h3>제안하실 때 보내주실 내용</h3>
+            <ol>
+              <li>회사명, 담당자, 연락처</li>
+              <li>제품명과 제품 소개서 (사진·상세페이지)</li>
+              <li>공급가, 최소 주문 수량, 배송 방식</li>
+              <li>인증·신고 서류 (식품은 품목제조보고 등, 공산품은 KC 인증 등)</li>
+            </ol>
+          </div>
+        </div>
+        <div class="mail">
+          <span class="lbl">제안 메일</span>
+          <div class="btns">
+            <a class="btn btn-gold" href="mailto:charis@hankkeut.kr">charis@hankkeut.kr</a>
+            <a class="btn btn-ghost" href="mailto:hankkeut_kr@naver.com">hankkeut_kr@naver.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="logo"><b>한끗<i>픽</i></b><small>CHARIS &amp; CO.</small></div>
+    <p><span class="nw">상호 카리스앤코</span><span class="dot">|</span><span class="nw">대표자 조형민</span><span class="dot">|</span><span class="nw">사업자등록번호 201-18-68442</span><span class="dot">|</span><span class="nw">경기도 구리시</span></p>
+    <p><a href="mailto:charis@hankkeut.kr">charis@hankkeut.kr</a> / <a href="mailto:hankkeut_kr@naver.com">hankkeut_kr@naver.com</a></p>
+  </div>
+</footer>
+
+<!-- 휴대폰 하단 고정 버튼 (첫 화면을 지나면 나타남) -->
+<div class="dock" id="dock">
+  <a class="btn btn-navy" href="https://smartstore.naver.com/hankkeut_kr" target="_blank" rel="noopener">스마트스토어</a>
+  <a class="btn btn-line" href="#propose">제안하기</a>
+</div>
+
+<script>
+  const bar = document.getElementById('topbar');
+  const dock = document.getElementById('dock');
+  const hero = document.getElementById('hero');
+  const propose = document.getElementById('propose');
+
+  // 상단 바 배경, 휴대폰 하단 버튼 (첫 화면을 지나면 보이고, 제안 구역에서는 숨김)
+  const onScroll = () => {
+    bar.classList.toggle('scrolled', window.scrollY > 20);
+    const pastHero = hero.getBoundingClientRect().bottom < 0;
+    const atPropose = propose.getBoundingClientRect().top < window.innerHeight;
+    dock.classList.toggle('show', pastHero && !atPropose);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  const supportsIO = 'IntersectionObserver' in window;
+
+  // 구역이 화면에 들어오면 부드럽게 나타나기 (휴대폰 기준 사진도 여기서 열림)
+  const items = document.querySelectorAll('.reveal, .step');
+  if (supportsIO) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    items.forEach((el) => io.observe(el));
+  } else {
+    items.forEach((el) => el.classList.add('on'));
+  }
+
+  // PC: 화면 가운데에 온 기준에 맞춰 왼쪽 사진 바꾸기
+  const steps = [...document.querySelectorAll('.step')];
+  const frames = [...document.querySelectorAll('.stage .ph')];
+  const count = document.getElementById('count');
+  const setActive = (i) => {
+    steps.forEach((s, k) => s.classList.toggle('active', k === i));
+    frames.forEach((f, k) => f.classList.toggle('on', k === i));
+    count.innerHTML = String(i + 1).padStart(2, '0') + ' <i>/ 04</i>';
+  };
+  setActive(0);
+  if (supportsIO) {
+    const mid = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) setActive(steps.indexOf(e.target)); });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+    steps.forEach((s) => mid.observe(s));
+  }
+</script>
+</body>
+</html>
